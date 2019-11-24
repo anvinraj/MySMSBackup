@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:id="@+id/nav_bar"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:orientation="horizontal"
+
+
+                    android:layout_gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        >
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:background="@drawable/ic_menu_white_24dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/nav_open"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+
+                            android:gravity="center"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_gravity="center|end"
+                            android:id="@+id/user_icon"
+                            android:layout_alignParentRight="true"
+                            />
+                        &lt;!&ndash; (inside above imageview) android:background="@drawable/user"&ndash;&gt;
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/prev_icon2"
+                            android:visibility="gone">
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_11sdp"
+
+                                android:gravity="center"
+
+                                android:layout_marginLeft="@dimen/_5sdp"
+
+                                android:layout_gravity="center|end"
+
+                                android:layout_alignParentRight="true"
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/prev_icon_nav"
+                            android:visibility="gone">
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_11sdp"
+                                android:gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+
+                                android:layout_gravity="center|end"
+
+                                android:layout_alignParentRight="true"
+
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>-->
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <include
+                layout="@layout/activity_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+<!--            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:requiresFadingEdge="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+
+
+
+                    &lt;!&ndash;fourth -start&ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_send_package"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_weight="1"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/shadow_black"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/btn_white_text"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight=".6"
+                                        android:layout_gravity="center|bottom"
+                                        android:gravity="center|bottom">
+                                        <ImageView
+                                            android:layout_width="@dimen/_50sdp"
+                                            android:layout_height="@dimen/_50sdp"
+                                            android:backgroundTint="@color/button_text_color"
+                                            android:background="@drawable/ic_local_shipping_white_24dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight=".4"
+                                        android:layout_gravity="center|top"
+                                        android:gravity="center|top">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Send Package"
+                                            android:textColor="@color/button_text_color"
+                                            android:textSize="@dimen/_16sdp"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    &lt;!&ndash;fourth -end&ndash;&gt;
+
+
+                    &lt;!&ndash;second -start&ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_courier_details"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_weight="1"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/shadow_black"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/btn_white_text"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight=".6"
+                                        android:layout_gravity="center|bottom"
+                                        android:gravity="center|bottom">
+                                        <ImageView
+                                            android:layout_width="@dimen/_50sdp"
+                                            android:layout_height="@dimen/_50sdp"
+                                            android:backgroundTint="@color/button_text_color"
+                                            android:background="@drawable/ic_beenhere_white_24dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight=".4"
+                                        android:layout_gravity="center|top"
+                                        android:gravity="center|top">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Courier Status"
+                                            android:textColor="@color/button_text_color"
+                                            android:textSize="@dimen/_16sdp"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    &lt;!&ndash;second -end&ndash;&gt;
+
+
+
+
+
+
+                    &lt;!&ndash;third -start&ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_settings"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_weight="1"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/shadow_black"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/btn_white_text"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight=".6"
+                                        android:layout_gravity="center|bottom"
+                                        android:gravity="center|bottom">
+                                        <ImageView
+                                            android:layout_width="@dimen/_50sdp"
+                                            android:layout_height="@dimen/_50sdp"
+                                            android:backgroundTint="@color/button_text_color"
+
+                                            android:background="@drawable/ic_settings_white_24dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight=".4"
+                                        android:layout_gravity="center|top"
+                                        android:gravity="center|top">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Settings"
+                                            android:textColor="@color/button_text_color"
+                                            android:textSize="@dimen/_16sdp"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    &lt;!&ndash;third -end&ndash;&gt;
+
+                    &lt;!&ndash;fifth -start&ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_logout"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_weight="1"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/shadow_black"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/btn_white_text"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight=".6"
+                                        android:layout_gravity="center|bottom"
+                                        android:gravity="center|bottom">
+                                        <ImageView
+                                            android:layout_width="@dimen/_50sdp"
+                                            android:layout_height="@dimen/_50sdp"
+                                            android:backgroundTint="@color/button_text_color"
+                                            android:background="@drawable/ic_exit_to_app_white_24dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight=".4"
+                                        android:layout_gravity="center|top"
+                                        android:gravity="center|top">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="logout"
+                                            android:textColor="@color/button_text_color"
+                                            android:textSize="@dimen/_16sdp"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    &lt;!&ndash;fifth -end&ndash;&gt;
+
+
+                </LinearLayout>
+
+            </ScrollView>-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

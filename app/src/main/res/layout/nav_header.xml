@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    android:gravity="center"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<ImageView-->
+            <!--android:id="@+id/nav_drawer_imageView"-->
+            <!--android:layout_width="@dimen/_70sdp"-->
+            <!--android:layout_height="@dimen/_70sdp"-->
+            <!--android:background="@drawable/ic_account_circle_white_24dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+
+            <!--android:layout_marginTop="@dimen/_50sdp"-->
+            <!--/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Name"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/user_name"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_12sdp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
